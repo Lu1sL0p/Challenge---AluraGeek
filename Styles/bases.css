@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Noto+Serif+Display:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+:root {
+    --black: #141414;
+    --black-section:  #141414ad;
+    --deep-black: #080808;
+    --white: #fcfcfc;
+    --white-hover: #fcfcfcbb;
+    --red: #CF2127;
+    --blue: #282ed4;
+
+    --font: font-family: 'Raleway', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--black);
+}
+
+a{
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover{
+    color: var(--white-hover);
+}
+
+.title1 {
+        /*
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+    */
+    color: var(--white);
+    font: bold 3rem 'Raleway', sans-serif;
+}
+
+.title2 {
+    color: var(--white);
+    font: bold 1.8rem'Raleway', sans-serif;
+}
+
+.text{
+    color: var(--white);
+    font: normal 1rem 'Raleway', sans-serif;
+}
+
+.text--active{
+    color: var(--white);
+    font: bold 1rem 'Raleway', sans-serif;
+}
+
+.button {
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover{
+    color: var(--black-section);
+}
+
+@media screen and (max-width: 1023px) {
+    .button {
+    height: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+   .title1 {
+        font-size: 2rem;
+}
+.button {
+   height: 35px;
+ }
+}
