@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AlureGeek - Productos</title>
+    <title>AluraGeek - Agregar producto</title>
     <link rel="stylesheet" href="../Styles/reset.css" />
     <link rel="stylesheet" href="../Styles/bases.css" />
     <link rel="stylesheet" href="../Styles/Login/header.css" />
-    <link rel="stylesheet" href="../Styles/Home/products.css" />
-    <link rel="stylesheet" href="../Styles/Products/products.css">
-    <link rel="stylesheet" href="../Styles/contact.css">
-    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/Add Product/header.css" />
+    <link rel="stylesheet" href="../Styles/Add Product/main.css" />
+    <link rel="stylesheet" href="../Styles/contact.css" />
+    <link rel="stylesheet" href="../Styles/footer.css" />
   </head>
   <body>
     <header class="header">
@@ -38,91 +38,26 @@
           />
         </div>
       </div>
+      <a href="./products.html"
+        ><button class="header__btn button">Menú administrador</button></a
+      >
     </header>
     <main>
-      <section class="products">
-        <div class="toys items__box">
-          <div class="products__head">
-            <h2 class="title2 produts__title">Todos los productos</h2>
-            <a href="./addProduct.html"><button class="products__btn button">Agregar producto</button></a>
-          </div>
-          <div class="products__body">
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="../Images/Home/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name text">Producto XYZ</p>
-              <p class="products__body__price text">$ 60.00</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
-
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            
-          </div>
-        </div>
+      <section class="form">
+        <form class="form__container">
+          <h2 class="form__container__title title2">Agregar nuevo producto</h2>
+          <input class="form__container__input" type="url" name="" id="" placeholder="URL de la imágen"/>
+          <select class="form__container__input--list" name="Categoría del producto" id="">
+            <option disabled selected>Categoría...</option>
+            <option value="Ropa">Juguetes</option>
+            <option value="Ropa">Ropa</option>
+            <option value="Ropa">Otros</option>
+          </select>
+          <input class="form__container__input" type="number" name="" id="" placeholder="Nombre del producto"/>
+          <input class="form__container__input" type="number" name="" id="" placeholder="Precio del producto"/>
+          <textarea class="form__container__input--area" ame="" id="" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+          <button class="form__container__input--btn button" >Agregar producto</button>
+        </form>
       </section>
       <section class="contact">
         <div class="contact__container">

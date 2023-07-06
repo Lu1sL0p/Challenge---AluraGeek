@@ -164,5 +164,6 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 0.75rem;
     position: absolute;
     left: 50%;
+    bottom: 25%;
   }
 }
