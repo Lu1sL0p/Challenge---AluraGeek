@@ -44,20 +44,32 @@
     </header>
     <main>
       <section class="form">
-        <form class="form__container">
-          <h2 class="form__container__title title2">Agregar nuevo producto</h2>
-          <input class="form__container__input" type="url" name="" id="" placeholder="URL de la imágen"/>
-          <select class="form__container__input--list" name="Categoría del producto" id="">
-            <option disabled selected>Categoría...</option>
-            <option value="Ropa">Juguetes</option>
-            <option value="Ropa">Ropa</option>
-            <option value="Ropa">Otros</option>
-          </select>
-          <input class="form__container__input" type="number" name="" id="" placeholder="Nombre del producto"/>
-          <input class="form__container__input" type="number" name="" id="" placeholder="Precio del producto"/>
-          <textarea class="form__container__input--area" ame="" id="" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
-          <button class="form__container__input--btn button" >Agregar producto</button>
-        </form>
+        <fieldset class="form__container">
+          <legend class="form__container__title title2">Agregar nuevo producto</legend>
+
+          <div class="form__container--item">
+            <input class="form__container__input" id="url" type="url" name="New Product" data-type="url" required placeholder="url">
+            <label class="form__container--placeholder text" for="url">url de la imagen</label>
+            <span class="form__container__error text">Este campo es obligatorio</span>
+          </div>
+          <div class="form__container--item">
+            <input class="form__container__input" id="text" type="text" name="New Product" data-type="name" required placeholder="Nombre del producto" minlength="10">
+            <label class="form__container--placeholder text" for="text">Nombre del producto</label>
+            <span class="form__container__error text">Este campo es obligatorio</span>
+          </div>
+          <div class="form__container--item">
+            <input class="form__container__input" id="price" type="number" name="New Product" data-type="price" required placeholder="Precio del producto">
+            <label class="form__container--placeholder text" for="price">Precio del producto</label>
+            <span class="form__container__error text">Este campo es obligatorio</span>
+          </div>
+          <div class="form__container--item">
+            <textarea name="New Product" id="description" class="form__container__input--area" data-type="description" required placeholder="Descpripción del producto" minlength="15"></textarea>
+            <label for="description" class="form__container--placeholder--area text">Descripción del producto</label>
+            <span class="form__container__error">Este campo es obligatorio</span>
+          </div>
+
+        </fieldset>
+        <button class="form__container__input--btn button" data-type-addBtn>Agregar producto</button> 
       </section>
       <section class="contact">
         <div class="contact__container">
@@ -139,4 +151,5 @@
       <p class="text--active">2023</p>
     </footer>
   </body>
+  <script type="module" src="../Script/Add Products/formApp.js"></script>
 </html>

@@ -145,6 +145,15 @@
   .contact__msg__txtArea {
     width: calc(100% - 16px);
   }
+
+  .contact__msg {
+    gap: 10px;
+  }
+
+  .contact__msg__text {
+    margin: 15px 0 10px;
+  }
+
   .contact__msg__btn {
     width: 150px;
     font-size: 0.75rem;

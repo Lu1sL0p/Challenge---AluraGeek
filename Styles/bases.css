@@ -72,14 +72,18 @@ a:hover{
 @media screen and (max-width: 1023px) {
     .button {
     height: 40px;
+    border-radius: 10px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
-   .title1 {
-        font-size: 2rem;
-}
+.title1 {
+  font-size: 2rem;
+ }
+ .title2{
+    font-size: 1.2rem;
+ }
 .button {
    height: 35px;
  }

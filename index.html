@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./Styles/Home/header.css  " />
     <link rel="stylesheet" href="./Styles/Home/main.css" />
     <link rel="stylesheet" href="./Styles/Home/banner.css" />
+    <link rel="stylesheet" href="./Styles/Home/autoBanner.css">
     <link rel="stylesheet" href="./Styles/Home/products.css" />
     <link rel="stylesheet" href="./Styles/contact.css" />
     <link rel="stylesheet" href="./Styles/footer.css" />
@@ -34,7 +35,7 @@
           />
           <img
             class="header__left__search__glass"
-            src="../Images/magnifyingGlass.svg"
+            src="./Images/magnifyingGlass.svg"
             alt=""
           />
         </div>
@@ -45,6 +46,39 @@
     </header>
     <main>
       <section class="banner">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+  
+            <div class="slide first">
+              <img src="./Images/Home/Banner/Banner1.jpg" alt="">
+            </div>
+            <div class="slide first">
+              <img src="./Images/Home/Banner/Banner2.jpg" alt="">
+            </div>
+            <div class="slide first threethImg">
+              <img src="./Images/Home/Banner/Banner3.jpg" alt="">
+            </div>
+            <div class="slide first fourthImg">
+              <img src="./Images/Home/Banner/Banner4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
         <div class="banner__background">
           <div class="banner__text">
             <h1 class="title1">Julio Promocional</h1>
@@ -372,4 +406,5 @@
       <p class="text--active">2023</p>
     </footer>
   </body>
+  <script src="./Script/Banner/scrollBanner.js"></script>
 </html>
