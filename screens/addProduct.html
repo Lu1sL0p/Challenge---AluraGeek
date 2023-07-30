@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AluraGeek - Login</title>
-    <link rel="stylesheet" href="../Styles/reset.css" />
-    <link rel="stylesheet" href="../Styles/bases.css" />
+    <title>AluraGeek - Agregar producto</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/bases.css" />
     <link rel="stylesheet" href="../Styles/Login/header.css" />
-    <link rel="stylesheet" href="../Styles/Login/login.css">
+    <link rel="stylesheet" href="../Styles/Add Product/header.css" />
+    <link rel="stylesheet" href="../Styles/Add Product/main.css" />
     <link rel="stylesheet" href="../Styles/contact.css" />
-    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/footer.css" />
   </head>
   <body>
     <header class="header">
@@ -37,15 +38,38 @@
           />
         </div>
       </div>
+      <a href="./products.html"
+        ><button class="header__btn button">Menú administrador</button></a
+      >
     </header>
     <main>
-      <section class="login">
-        <p class="contact__msg__text text--active">Iniciar Sesión</p>
-        <input class="login__box" type="text" name="" id="" placeholder="Alguien@example.com">
-        <input class="login__box" type="password" name="" id="" placeholder="**********">
-        <a href="./products.html">
-          <input class="login__btn" type="button" value="Entrar">
-        </a>
+      <section class="form">
+        <fieldset class="form__container">
+          <legend class="form__container__title title2">Agregar nuevo producto</legend>
+
+          <div class="form__container--item">
+            <input class="form__container__input" id="url" type="url" name="New Product" data-type="url" required placeholder="url">
+            <label class="form__container--placeholder text" for="url">url de la imagen</label>
+            <span class="form__container__error text">Este campo es obligatorio</span>
+          </div>
+          <div class="form__container--item">
+            <input class="form__container__input" id="text" type="text" name="New Product" data-type="name" required placeholder="Nombre del producto" minlength="10">
+            <label class="form__container--placeholder text" for="text">Nombre del producto</label>
+            <span class="form__container__error text">Este campo es obligatorio</span>
+          </div>
+          <div class="form__container--item">
+            <input class="form__container__input" id="price" type="number" name="New Product" data-type="price" required placeholder="Precio del producto">
+            <label class="form__container--placeholder text" for="price">Precio del producto</label>
+            <span class="form__container__error text">Este campo es obligatorio</span>
+          </div>
+          <div class="form__container--item">
+            <textarea name="New Product" id="description" class="form__container__input--area" data-type="description" required placeholder="Descpripción del producto" minlength="15"></textarea>
+            <label for="description" class="form__container--placeholder--area text">Descripción del producto</label>
+            <span class="form__container__error">Este campo es obligatorio</span>
+          </div>
+
+        </fieldset>
+        <button class="form__container__input--btn button" data-type-addBtn>Agregar producto</button> 
       </section>
       <section class="contact">
         <div class="contact__container">
@@ -127,4 +151,5 @@
       <p class="text--active">2023</p>
     </footer>
   </body>
+  <script type="module" src="../Script/Add Products/formApp.js"></script>
 </html>
