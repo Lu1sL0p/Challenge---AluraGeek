@@ -3,10 +3,11 @@
   width: 100%;
   height: 84px;
   box-sizing: border-box;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--black-section);
+  background-color: var(--deep-black);
 }
 
 .header__left {
@@ -14,7 +15,7 @@
   align-items: center;
 }
 
-.header__left__img {
+.header__left__img{
   display: flex;
   align-items: center;
 }
@@ -67,9 +68,58 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: var(--white);
 }
 
-.login{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    justify-content: c;
+@media screen and (max-width: 1023px) {
+  .header {
+    padding: 16px 32px;
+  }
+
+  .header__left__logo {
+    height: 38px;
+    width: 38.40748px;
+    margin-right: 4px;
+  }
+
+  .header__left__text {
+    font-size: 1.2rem;
+  }
+
+  .header__left__search {
+    width: 260px;
+    margin-left: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 16px;
+    height: 84px;
+  }
+
+  .header__left__logo {
+    height: 28px;
+    width: 28.40748px;
+    margin-right: 2px;
+  }
+
+  .header__left__search{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    position: absolute;
+    right: 3%;
+  }
+
+  .header__left__search__box {
+    display: none;
+  }
+
+  .header__left__search__glass{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .header__left__text {
+    font-size: 1rem;
+  }
 }
