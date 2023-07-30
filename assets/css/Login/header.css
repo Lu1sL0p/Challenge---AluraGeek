@@ -66,3 +66,10 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-left: 8px;
   background-color: var(--white);
 }
+
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: c;
+}
