@@ -6,10 +6,10 @@ const error2 = document.querySelector("[data-error2]");
 nombre.addEventListener("blur", (e) => {
   if (nombre.validity.valid) {
     nombre.parentElement.classList.remove("invalid");
-    error.classList.remove("invalid");
+    error.style.display = "none";
   } else {
     nombre.parentElement.classList.add("invalid");
-    error.classList.add("invalid");
+    error.style.display = "block";
   }
 });
 
