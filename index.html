@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/bases.css" />
     <link rel="stylesheet" href="./assets/css/Home/header.css  " />
-    <link rel="stylesheet" href="./assets/css/Home/main.css" />
     <link rel="stylesheet" href="./assets/css/Home/banner.css" />
     <link rel="stylesheet" href="./assets/css/Home/autoBanner.css">
-    <link rel="stylesheet" href="./assets/css/Home/products.css" />
+    <link rel="stylesheet" href="./assets/css/Products/products.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <script src="./Script/Banner/scrollBanner.js"></script>
+    <script type="module" src="./Script/Controllers/categoryProducts.js"></script>
   </head>
   <body>
     <header id="header" class="header">
@@ -82,11 +82,13 @@
         </div>
         <div class="banner__background">
           <div class="banner__text">
-            <h1 class="title1">Julio Promocional</h1>
+            <h1 class="title1"><span class="month">Agosto</span> de Promoción</h1>
             <p class="banner__text__sentence">
-              Productos seleccionados con 33% de descuento
+              ¡Productos seleccionados con hasta <span class="sale">15%</span> de descuento!
             </p>
-            <button class="banner__text__btn button">Ver descuentos</button>
+            <a href="./screens/productsClients.html">
+              <button class="banner__text__btn button">Ver descuentos</button>
+            </a>
           </div>
         </div>
       </section>
@@ -94,236 +96,28 @@
         <div class="toys items__box">
           <div class="products__head">
             <h2 class="title2">Juguetes</h2>
-            <a href="#">Ver todo</a>
+            <a href="./screens/productsClients.html">Ver todo</a>
           </div>
-          <div class="products__body">
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./assets/Images/Home/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name text">Producto XYZ</p>
-              <p class="products__body__price text">$ 60.00</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
-
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/unsplash_6FDXGY9J6y4.png"
-                alt=""
-              />
-              <p class="products__body__name">Producto XYZ</p>
-              <p class="products__body__price">$ 60.00</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
+          <div class="products__body" data-toy>
+            
           </div>
         </div>
         <div class="clothes items__box">
           <div class="products__head">
             <h2 class="title2">Ropa</h2>
-            <a href="#">Ver todo</a>
+            <a href="./screens/productsClients.html">Ver todo</a>
           </div>
-          <div class="products__body">
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./assets/Images/Home/Products/e42d2a38b9784fb70c9d2111251d6100.jpg"
-                alt=""
-              />
-              <p class="products__body__name text">
-                Sudadera con estampado de marvel studios
-              </p>
-              <p class="products__body__price text">$ 250.75</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
+          <div class="products__body" data-clothes>
 
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/e42d2a38b9784fb70c9d2111251d6100.jpg"
-                alt=""
-              />
-              <p class="products__body__name">
-                Sudadera con estampado de marvel studios
-              </p>
-              <p class="products__body__price">$ 250.75</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/e42d2a38b9784fb70c9d2111251d6100.jpg"
-                alt=""
-              />
-              <p class="products__body__name">
-                Sudadera con estampado de marvel studios
-              </p>
-              <p class="products__body__price">$ 250.75</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/e42d2a38b9784fb70c9d2111251d6100.jpg"
-                alt=""
-              />
-              <p class="products__body__name">
-                Sudadera con estampado de marvel studios
-              </p>
-              <p class="products__body__price">$ 250.75</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/e42d2a38b9784fb70c9d2111251d6100.jpg"
-                alt=""
-              />
-              <p class="products__body__name">
-                Sudadera con estampado de marvel studios
-              </p>
-              <p class="products__body__price">$ 250.75</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/e42d2a38b9784fb70c9d2111251d6100.jpg"
-                alt=""
-              />
-              <p class="products__body__name text">
-                Sudadera con estampado de marvel studios
-              </p>
-              <p class="products__body__price">$ 250.75</p>
-              <a class="products__body__link" href="#">Ver producto</a>
-            </div>
           </div>
         </div>
         <div class="others items__box">
           <div class="products__head">
             <h2 class="title2">Otros</h2>
-            <a href="#">Ver todo</a>
+            <a href="./screens/productsClients.html">Ver todo</a>
           </div>
-          <div class="products__body">
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./assets/Images/Home/Products/662497a7008ac989398293d0ce44a151_tn.jpeg"
-                alt=""
-              />
-              <p class="products__body__name text">Pulsera - Capitán América</p>
-              <p class="products__body__price text">$35.50</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
+          <div class="products__body" data-other>
 
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/662497a7008ac989398293d0ce44a151_tn.jpeg"
-                alt=""
-              />
-              <p class="products__body__name text">Pulsera - Capitán América</p>
-              <p class="products__body__price text">$35.50</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/662497a7008ac989398293d0ce44a151_tn.jpeg"
-                alt=""
-              />
-              <p class="products__body__name text">Pulsera - Capitán América</p>
-              <p class="products__body__price text">$35.50</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/662497a7008ac989398293d0ce44a151_tn.jpeg"
-                alt=""
-              />
-              <p class="products__body__name text">Pulsera - Capitán América</p>
-              <p class="products__body__price text">$35.50</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/662497a7008ac989398293d0ce44a151_tn.jpeg"
-                alt=""
-              />
-              <p class="products__body__name text">Pulsera - Capitán América</p>
-              <p class="products__body__price text">$35.50</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
-            <div class="products__body--item">
-              <img
-                class="products__body__image"
-                src="./Images/Products/662497a7008ac989398293d0ce44a151_tn.jpeg"
-                alt=""
-              />
-              <p class="products__body__name text">Pulsera - Capitán América</p>
-              <p class="products__body__price text">$35.50</p>
-              <a class="products__body__link text--active" href="#"
-                >Ver producto</a
-              >
-            </div>
           </div>
         </div>
       </section>
@@ -347,21 +141,50 @@
             <li><a href="#">Quiero ser franquiciado</a></li>
             <li><a href="#">Anuncie aquí</a></li>
           </ul>
-          <div class="contact__msg">
-            <p class="contact__msg__text text--active">Hable con nosotros</p>
-            <input
-              class="contact__msg__name text"
-              type="text"
-              placeholder="Nombre"
-            />
-            <textarea
-              class="contact__msg__txtArea text"
-              name=""
-              id=""
-              placeholder="Ingrese su mensaje"
-            ></textarea>
-            <button class="contact__msg__btn button">Enviar Mensaje</button>
-          </div>
+          <form class="contact__msg" data-contact>
+            <legend class="contact__msg__text text--active">
+              Hable con nosotros
+            </legend>
+            <div class="contact__msg__input">
+              <input
+                class="contact__msg__name text"
+                type="text"
+                name="contact"
+                id="name"
+                placeholder="Nombre"
+                data-name
+                required
+              />
+              <label for="name" class="contact__msg__label text"
+                >Nombre(s)</label
+              >
+              <span class="errorMsg text" data-error
+                >Este campo es Obligatorio</span
+              >
+            </div>
+            <div class="contact__msg__input">
+              <textarea
+                class="contact__msg__txtArea text"
+                name="contact"
+                id="msg"
+                placeholder="Ingrese su mensaje"
+                data-msg
+                required
+              ></textarea>
+              <label for="msg" class="contact__msg__label--area text"
+                >Ingrese su mensaje</label
+              >
+              <span class="errorMsg text" data-error2
+                >Este campo es Obligatorio</span
+              >
+            </div>
+            <span class="form__msgSucces text" data-succes
+              >Mensaje enviado con éxito</span
+            >
+            <button type="submit" class="contact__msg__btn button">
+              Enviar Mensaje
+            </button>
+          </form>
         </div>
       </section>
     </main>
@@ -406,5 +229,6 @@
       </div>
       <p class="text--active">2023</p>
     </footer>
+    <script src="./Script/Contact/validation.js"></script>
   </body>
 </html>

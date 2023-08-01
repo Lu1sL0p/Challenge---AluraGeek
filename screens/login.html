@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/bases.css" />
     <link rel="stylesheet" href="../assets/css/Login/header.css" />
-
-    <link rel="stylesheet" href="../assets/css/Login/login.css">
-
+    <link rel="stylesheet" href="../assets/css/Login/login.css" />
     <link rel="stylesheet" href="../assets/css/contact.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <script type="module" src="../Script/Login/appValidation.js"></script>
   </head>
   <body>
     <header class="header">
@@ -34,24 +33,52 @@
           />
           <img
             class="header__left__search__glass"
-            src="../Images/magnifyingGlass.svg"
+            src="../assets/Images/magnifyingGlass.svg"
             alt=""
           />
         </div>
       </div>
     </header>
     <main>
-      <section class="login">
-        <p class="contact__msg__text text--active">Iniciar Sesión</p>
-        <input class="login__box" type="text" name="" id="" placeholder="Alguien@example.com">
-        <input class="login__box" type="password" name="" id="" placeholder="**********">
-        <a href="./products.html">
-          <input class="login__btn" type="button" value="Entrar">
-        </a>
-      </section>
+      <form class="login" data-log>
+        <legend class="title2">Iniciar Sesión</legend>
+        <div class="login--input">
+          <input
+            class="login__box"
+            type="email"
+            name="login"
+            id="email"
+            placeholder="Alguien@example.com"
+            required
+            data-type="email"
+          />
+          <label for="email" class="login__placeholder text"
+            >User@example.com</label
+          >
+          <span class="login__errorMessage text"
+            >Este campo es obligatorio</span
+          >
+        </div>
+        <div class="login--input">
+          <input
+            class="login__box"
+            type="password"
+            name="login"
+            id="password"
+            placeholder="**********"
+            required
+            data-type="password"
+          />
+          <label for="password" class="login__placeholder text">Password</label>
+          <span class="login__errorMessage text"
+            >Este campo es obligatorio</span
+          >
+        </div>
+        <button class="login__btn" type="submit">Entrar</button>
+      </form>
       <section class="contact">
         <div class="contact__container">
-          <a href="../index.html" class="contact__left">
+          <a href="#header" class="contact__left">
             <img
               class="contact__left__logo"
               src="../assets/Images/logo.svg"
@@ -69,21 +96,50 @@
             <li><a href="#">Quiero ser franquiciado</a></li>
             <li><a href="#">Anuncie aquí</a></li>
           </ul>
-          <div class="contact__msg">
-            <p class="contact__msg__text text--active">Hable con nosotros</p>
-            <input
-              class="contact__msg__name text"
-              type="text"
-              placeholder="Nombre"
-            />
-            <textarea
-              class="contact__msg__txtArea text"
-              name=""
-              id=""
-              placeholder="Ingrese su mensaje"
-            ></textarea>
-            <button class="contact__msg__btn button">Enviar Mensaje</button>
-          </div>
+          <form class="contact__msg" data-contact>
+            <legend class="contact__msg__text text--active">
+              Hable con nosotros
+            </legend>
+            <div class="contact__msg__input">
+              <input
+                class="contact__msg__name text"
+                type="text"
+                name="contact"
+                id="name"
+                placeholder="Nombre"
+                data-name
+                required
+              />
+              <label for="name" class="contact__msg__label text"
+                >Nombre(s)</label
+              >
+              <span class="errorMsg text" data-error
+                >Este campo es Obligatorio</span
+              >
+            </div>
+            <div class="contact__msg__input">
+              <textarea
+                class="contact__msg__txtArea text"
+                name="contact"
+                id="msg"
+                placeholder="Ingrese su mensaje"
+                data-msg
+                required
+              ></textarea>
+              <label for="msg" class="contact__msg__label--area text"
+                >Ingrese su mensaje</label
+              >
+              <span class="errorMsg text" data-error2
+                >Este campo es Obligatorio</span
+              >
+            </div>
+            <span class="form__msgSucces text" data-succes
+              >Mensaje enviado con éxito</span
+            >
+            <button type="submit" class="contact__msg__btn button">
+              Enviar Mensaje
+            </button>
+          </form>
         </div>
       </section>
     </main>
@@ -128,5 +184,7 @@
       </div>
       <p class="text--active">2023</p>
     </footer>
+    <script src="../Script/Login/login.js"></script>
+    <script src="../Script/Contact/validation.js"></script>
   </body>
 </html>

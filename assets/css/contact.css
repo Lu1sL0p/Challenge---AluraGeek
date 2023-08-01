@@ -1,12 +1,13 @@
 .contact {
   background: url(../Images/Home/sombras-de-los-vengadores_2880x1800_xtrafondos.com.jpg)
     no-repeat center / cover;
+    height: auto;
 }
 
 .contact__container {
   background-color: var(--black-section);
   padding: 64px 80px;
-  height: 260px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baselinez;
@@ -54,20 +55,127 @@
 .contact__msg__name {
   width: 28rem;
   height: 30px;
-  padding: 8px;
+  padding: 15px 8px 8px;
   color: black;
   font-weight: normal;
   border-radius: 5px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.invalid .contact__msg__name{
+  border: 2px solid var(--red);
 }
 
 .contact__msg__txtArea {
   resize: none;
   width: 28rem;
   height: 90px;
-  padding: 8px;
+  padding: 15px 8px 8px;
   color: black;
   font-weight: normal;
   border-radius: 5px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.invalid .contact__msg__txtArea {
+  border: 2px solid var(--red);
+}
+
+.contact__msg__name::placeholder,
+.contact__msg__txtArea::placeholder {
+  visibility: hidden;
+}
+
+.contact__msg__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contact__msg__name:not(:placeholder-shown) + .contact__msg__label,
+.contact__msg__name:focus + .contact__msg__label {
+  color: var(--blue);
+  font-size: 0.75rem;
+  top: -2.6rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.invalid .contact__msg__name:not(:placeholder-shown) + .contact__msg__label,
+.invalid .contact__msg__name:focus + .contact__msg__label {
+  color: var(--red);
+  font-size: 0.75rem;
+  top: -2.6rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact__msg__name:not(:placeholder-shown),
+.contact__msg__name:focus {
+  border: 2px solid var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+
+.invalid .contact__msg__name:not(:placeholder-shown),
+.invalid .contact__msg__name:focus {
+  border: 2px solid var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+
+.contact__msg__label {
+  color: var(--black);
+  position: relative;
+  top: -1.8rem;
+  left: 0.5rem;
+  width: 10rem;
+}
+
+.contact__msg__label--area {
+  color: var(--black);
+  position: relative;
+  top: -5rem;
+  left: 0.5rem;
+  width: 10rem;
+}
+
+.invalid .contact__msg__label,
+.invalid .contact__msg__label--area {
+  color: var(--red);
+}
+
+.contact__msg__txtArea:not(:placeholder-shown) + .contact__msg__label--area,
+.contact__msg__txtArea:focus + .contact__msg__label--area {
+  color: var(--blue);
+  font-size: 0.75rem;
+  top: -5.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.invalid .contact__msg__txtArea:not(:placeholder-shown) + .contact__msg__label--area,
+.invalid .contact__msg__txtArea:focus + .contact__msg__label--area {
+  color: var(--red);
+  font-size: 0.75rem;
+  top: -5.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact__msg__txtArea:not(:placeholder-shown),
+.contact__msg__txtArea:focus  {
+  border: 2px solid var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+
+.invalid .contact__msg__txtArea:not(:placeholder-shown),
+.invalid .contact__msg__txtArea:focus  {
+  border: 2px solid var(--red);
+  transition: all 0.2s ease-in-out;
+}
+
+.errorMsg {
+  display: none;
+  color: var(--red);
+  margin-top: -15px;
+  margin-left: 20px;
 }
 
 .contact__msg__btn {
@@ -76,12 +184,30 @@
   align-self: self-end;
   font-weight: bold;
   width: 168px;
-  font-weight: normal;
   margin-top: 15px;
 }
 
 .contact__msg__btn:hover {
   box-shadow: 0px 2px 10px 0px var(--blue);
+}
+
+.form__msgSucces{
+  display: none;
+  transition: all 0.2s ease-in-out;
+  animation: appear infinite 4s;
+  opacity: 0;
+}
+
+@keyframes appear {
+  15% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -96,7 +222,6 @@
 
 @media screen and (max-width: 1023px) {
   .contact__container {
-    height: 364px;
     padding: 32px;
   }
   .contact__left__logo {
@@ -123,7 +248,6 @@
 
 @media screen and (max-width: 768px) {
   .contact__container {
-    height: 553px;
     padding: 16px;
     flex-direction: column;
     align-items: center;
@@ -156,6 +280,7 @@
 
   .contact__msg__btn {
     width: 150px;
+    height: 40px;
     font-size: 0.75rem;
     margin-top: 5px;
   }

@@ -17,6 +17,16 @@
   font-family: var(--font);
 }
 
+.month {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.sale {
+  color: var(--red);
+  font-weight: bold;
+}
+
 .banner__text__btn {
   height: 50px;
   width: 130px;

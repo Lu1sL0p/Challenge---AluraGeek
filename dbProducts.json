@@ -1,0 +1,148 @@
+{
+  "product": [
+    {
+      "description": "Muñeco Hot Toy de Black Widow",
+      "image": "https://tooys.mx/media/catalog/product/cache/39c7ff5a74bd9fa282a021db605b774d/b/l/black-widow_marvel_avengers-endgame-hot-toys-14.jpg",
+      "name": "Hot Toy - Black Widow",
+      "category": "Juguete",
+      "price": 800,
+      "id": 1
+    },
+    {
+      "description": "Hot Toy de Capitana Carter",
+      "image": "https://limitededition.mx/cdn/shop/products/limited-edition-4895228609199-A_800x.jpg?v=1632593724",
+      "name": "Hot Toy - Capitana Carter",
+      "category": "Juguete",
+      "price": 920,
+      "id": "8bd15d62-a77c-4c2a-a701-baea8ee9b33a"
+    },
+    {
+      "image": "https://i.pinimg.com/originals/54/7f/6f/547f6f97486290b4871f894cc09766ee.jpg",
+      "name": "Sudadera Estampado - Marvel",
+      "category": "Ropa",
+      "price": 320,
+      "description": "Sudadera estampada con logo de Marvel",
+      "id": "f104a743-e70d-4071-bb96-04a7446d30f0"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/A1EHx4FHFjL._CLa%7C2140%2C2000%7CA1giw87k%2BGL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX342_.png",
+      "name": "Sudadera Marvel - Logo",
+      "category": "Ropa",
+      "price": 280,
+      "description": "Sudadera color Negro con loso de Marvel Studio",
+      "id": "30ce3746-6598-4524-ba75-5b685a12e3ef"
+    },
+    {
+      "image": "https://cdn.fashiola.es/L606550311/conjunto-de-regalo-pulsera-rigida-spider-man-de-marvel-en-plata-de-ley.jpg",
+      "name": "Pulsera de Acero- Spiderman",
+      "category": "Otros",
+      "price": 120,
+      "description": "Pulsera de Spider-Man de Acero inoxidable",
+      "id": "ffb7a08d-2ff1-400c-b20d-31c92a17738d"
+    },
+    {
+      "description": "Anillo de Sylvie de la Serie Loki",
+      "image": "https://m.media-amazon.com/images/I/41mXriIA--L._AC_SY350_.jpg",
+      "name": "Anillo Loki",
+      "category": "Otros",
+      "price": "100",
+      "id": "8dee8330-7b38-4644-a814-1326ec8b330d"
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_935793-MCO54007220786_022023-O.webp",
+      "name": "Aretes - Groot",
+      "category": "Otros",
+      "price": "80",
+      "description": "Aretes de bisutería - Groot",
+      "id": "2ad831e9-5337-4117-9b9e-fa4edcb8088d"
+    },
+    {
+      "description": "Pulseras de Loki y Thor",
+      "image": "https://i.pinimg.com/originals/88/45/24/884524e23b27bbedf87a1bfa4e9d2acb.jpg",
+      "name": "Pulseras de Loki y Thor",
+      "category": "Otros",
+      "price": "220",
+      "id": "4e3d47b4-f41d-4047-910c-5ff131d263ff"
+    },
+    {
+      "image": "data:image/jpeg;base64,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",
+      "name": "Cuadro decorativo de los Vengadores",
+      "category": "Otros",
+      "price": "360",
+      "description": "Cuadro decorativo de los Vengadores listo para colgar en pared",
+      "id": "760209f6-65f7-4f0a-99c2-1e8176a2e747"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8H308yg1j4lAMmUeulZCJ9Lk9zmNBZ7XHA&usqp=CAU",
+      "name": "Mochila de Spider-Man",
+      "category": "Otros",
+      "price": "475",
+      "description": "Mochila de Spider-Man de tamaño mediano",
+      "id": "45882c2d-5b38-49f6-934d-f61d3ea2c90d"
+    },
+    {
+      "image": "https://i.pinimg.com/550x/fb/62/3e/fb623e4dd40e8edc06f1e8cad64250b8.jpg",
+      "name": "Chamarra de Spider-man",
+      "category": "Ropa",
+      "price": "599",
+      "description": "Chamarra unisex de Spider-Man",
+      "id": "9facbff5-ef1c-4535-8a41-be9eddb55f80"
+    },
+    {
+      "image": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/2fd20413-30d8-492f-aeb2-6349e0cc860a.3e5d158d2adf8e586e55b5c80af0742e.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "name": "Hoodie Venom",
+      "category": "Ropa",
+      "price": "565",
+      "description": "Hoddie Venom color blanca",
+      "id": "56864380-f167-45cc-8efc-78dc79f2c63d"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/51IpgIoGVvL._AC_SY580_.jpg",
+      "name": "Calcetines Deadpool",
+      "category": "Ropa",
+      "price": "210",
+      "description": "5 pares de calcetines de Deadpool",
+      "id": "2348c8d8-c866-46e8-a2c3-08e16f5d540d"
+    },
+    {
+      "description": "Máscara de iron-Man activada con comandos de voz",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_990245-MLM69915184119_062023-O.webp",
+      "name": "Máscara Iron-Man con comando de voz",
+      "category": "Juguete",
+      "price": "1780",
+      "id": "e15505c9-60ca-4b1e-9a0c-587351a0382c"
+    },
+    {
+      "image": "https://chedrauimx.vtexassets.com/arquivos/ids/15179086/5010993973484_02.jpg?v=638206459394670000",
+      "name": "Martillo de Thor con luz led",
+      "category": "Juguete",
+      "price": "1240",
+      "description": "Martillo de Thor con luz led",
+      "id": "460bc240-27b3-487f-b725-be9a421dd0a4"
+    },
+    {
+      "description": "Hot Toy de Spider-Man de Tobey Maguire en la película Spider-Man No Way Home",
+      "image": "https://tooys.mx/media/catalog/product/cache/39c7ff5a74bd9fa282a021db605b774d/f/r/friendly-neighborhood-spider-man_marvel_00.jpg",
+      "name": "Hot Toy de Spider-Man (Tobey Maguire)",
+      "category": "Juguete",
+      "price": "875",
+      "id": "df9d17c2-2b88-4774-9e70-1e2cf06bd27d"
+    },
+    {
+      "description": "Hot Toy de Winter Soldier en Capitan America and the Winter Soldier",
+      "image": "https://www.kametoys.cl/wp-content/uploads/2021/03/Winter-Soldier-Hot_Toys.jpg",
+      "name": "Hot Toy de Winter Soldier",
+      "category": "Juguete",
+      "price": "930",
+      "id": "6c233e60-bd3c-44d0-9064-a0a4261edc7f"
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_659539-MLM53074468520_122022-O.webp",
+      "name": "Sudadera Deadpool",
+      "category": "Ropa",
+      "price": "250",
+      "description": "Sudadera de Deadpool color roja",
+      "id": "2db5c587-b420-4070-8315-a41b409bd0d9"
+    }
+  ]
+}

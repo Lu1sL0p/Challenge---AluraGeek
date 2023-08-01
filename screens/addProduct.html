@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/bases.css" />
     <link rel="stylesheet" href="../assets/css/Login/header.css" />
-
     <link rel="stylesheet" href="../assets/css/Add Product/header.css" />
     <link rel="stylesheet" href="../assets/css/Add Product/main.css" />
-
     <link rel="stylesheet" href="../assets/css/contact.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
   </head>
@@ -35,7 +33,7 @@
           />
           <img
             class="header__left__search__glass"
-            src="../Images/magnifyingGlass.svg"
+            src="../assets/Images/magnifyingGlass.svg"
             alt=""
           />
         </div>
@@ -45,37 +43,44 @@
       >
     </header>
     <main>
-      <section class="form">
+      <form class="form" data-form>
         <fieldset class="form__container">
           <legend class="form__container__title title2">Agregar nuevo producto</legend>
-
           <div class="form__container--item">
-            <input class="form__container__input" id="url" type="url" name="New Product" data-type="url" required placeholder="url">
+            <input class="form__container__input" id="url" type="url" name="New Product" data-type="url" data-url required placeholder="url">
             <label class="form__container--placeholder text" for="url">url de la imagen</label>
             <span class="form__container__error text">Este campo es obligatorio</span>
           </div>
           <div class="form__container--item">
-            <input class="form__container__input" id="text" type="text" name="New Product" data-type="name" required placeholder="Nombre del producto" minlength="10">
+            <input class="form__container__input" id="text" type="text" name="New Product" data-type="name" data-name required placeholder="Nombre del producto" minlength="10">
             <label class="form__container--placeholder text" for="text">Nombre del producto</label>
             <span class="form__container__error text">Este campo es obligatorio</span>
           </div>
           <div class="form__container--item">
-            <input class="form__container__input" id="price" type="number" name="New Product" data-type="price" required placeholder="Precio del producto">
+            <select class="form__container__select" required data-select>
+              <option value="wrong" class="form__container--placeholder text" disabled selected>Eliga una opción...</option>
+              <option value="Juguete" class="form__container--placeholder text">Juguete</option>
+              <option value="Ropa" class="form__container--placeholder text">Ropa</option>
+              <option value="Otros" class="form__container--placeholder text">Otros</option>
+            </select>
+            <span class="form__container__errorSelect text" data-wrong>Este campo es obligatorio</span>
+          </div>
+          <div class="form__container--item">
+            <input class="form__container__input" id="price" type="number" name="New Product" data-type="price" data-price required placeholder="Precio del producto">
             <label class="form__container--placeholder text" for="price">Precio del producto</label>
             <span class="form__container__error text">Este campo es obligatorio</span>
           </div>
           <div class="form__container--item">
-            <textarea name="New Product" id="description" class="form__container__input--area" data-type="description" required placeholder="Descpripción del producto" minlength="15"></textarea>
+            <textarea name="New Product" id="description" class="form__container__input--area" data-type="description" data-description required placeholder="Descpripción del producto" minlength="15"></textarea>
             <label for="description" class="form__container--placeholder--area text">Descripción del producto</label>
             <span class="form__container__error">Este campo es obligatorio</span>
           </div>
-
         </fieldset>
-        <button class="form__container__input--btn button" data-type-addBtn>Agregar producto</button> 
-      </section>
+        <button type="submit" class="form__container__input--btn button" data-type-addBtn>Agregar producto</button> 
+      </form>
       <section class="contact">
         <div class="contact__container">
-          <a href="../index.html" class="contact__left">
+          <a href="#header" class="contact__left">
             <img
               class="contact__left__logo"
               src="../assets/Images/logo.svg"
@@ -93,21 +98,50 @@
             <li><a href="#">Quiero ser franquiciado</a></li>
             <li><a href="#">Anuncie aquí</a></li>
           </ul>
-          <div class="contact__msg">
-            <p class="contact__msg__text text--active">Hable con nosotros</p>
-            <input
-              class="contact__msg__name text"
-              type="text"
-              placeholder="Nombre"
-            />
-            <textarea
-              class="contact__msg__txtArea text"
-              name=""
-              id=""
-              placeholder="Ingrese su mensaje"
-            ></textarea>
-            <button class="contact__msg__btn button">Enviar Mensaje</button>
-          </div>
+          <form class="contact__msg" data-contact>
+            <legend class="contact__msg__text text--active">
+              Hable con nosotros
+            </legend>
+            <div class="contact__msg__input">
+              <input
+                class="contact__msg__name text"
+                type="text"
+                name="contact"
+                id="name"
+                placeholder="Nombre"
+                data-name
+                required
+              />
+              <label for="name" class="contact__msg__label text"
+                >Nombre(s)</label
+              >
+              <span class="errorMsg text" data-error
+                >Este campo es Obligatorio</span
+              >
+            </div>
+            <div class="contact__msg__input">
+              <textarea
+                class="contact__msg__txtArea text"
+                name="contact"
+                id="msg"
+                placeholder="Ingrese su mensaje"
+                data-msg
+                required
+              ></textarea>
+              <label for="msg" class="contact__msg__label--area text"
+                >Ingrese su mensaje</label
+              >
+              <span class="errorMsg text" data-error2
+                >Este campo es Obligatorio</span
+              >
+            </div>
+            <span class="form__msgSucces text" data-succes
+              >Mensaje enviado con éxito</span
+            >
+            <button type="submit" class="contact__msg__btn button">
+              Enviar Mensaje
+            </button>
+          </form>
         </div>
       </section>
     </main>
@@ -153,5 +187,13 @@
       <p class="text--active">2023</p>
     </footer>
   </body>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+  integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
   <script type="module" src="../Script/Add Products/formApp.js"></script>
+  <script type="module" src="../Script/Controllers/register.controller.js"></script>
+  <script src="../Script/Contact/validation.js"></script>
 </html>

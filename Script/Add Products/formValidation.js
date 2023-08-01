@@ -11,7 +11,12 @@ export function validation(input) {
   }
 }
 
-const typeError = ["valueMissing", "typeMismatch", "patternMismatch", "tooShort"];
+const typeError = [
+  "valueMissing",
+  "typeMismatch",
+  "patternMismatch",
+  "tooShort",
+];
 
 const errorMessages = {
   url: {
@@ -26,12 +31,11 @@ const errorMessages = {
   price: {
     valueMissing: "El campo de nombre no puede estar vacío",
     typeMismatch: "Formato incorrecto, vuelva a intentar",
-    
   },
   description: {
     valueMissing: "El campo de descripción no puede estar vacío",
     tooShort: "El nombre debe de contener al menos 15 caracteres",
-  }
+  },
 };
 
 function showErrorMessage(typeInput, input) {
@@ -44,3 +48,19 @@ function showErrorMessage(typeInput, input) {
 
   return message;
 }
+
+function optionsSelect(option) {
+  const message = document.querySelector("[data-wrong]");
+  if (option.value == "wrong") {
+    option.style.border = "2px solid var(--red)"
+    message.style.display = "block";
+  } else {
+    option.style.border = "2px solid var(--blue)"
+    message.style.display = "none";
+  }
+}
+
+export const validationFunctions = {
+  validation,
+  optionsSelect,
+};
